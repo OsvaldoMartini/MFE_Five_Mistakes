@@ -8,8 +8,8 @@
 
 ## 4 Federated Modules are Not Versioned
 
--- Problems with contractual changes.
--- Here we use Error Boundaries: https://reactjs.org/docs/error-boundaries.html
+--> Problems with contractual changes.
+--> Here we use Error Boundaries: https://reactjs.org/docs/error-boundaries.html
 
 ## 5 Federated Modules Do NOT Have TypeScript Types
 
@@ -69,6 +69,8 @@ And
 ```
 
 ## Dev tools disabled
+
+--> Take a look on src_Counter_tsx.js, is just a javascript file
 
 ```javascript
   ./webpakc.config.js
