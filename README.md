@@ -80,3 +80,32 @@ And
 
   yarn build:dev
 ```
+
+## Defining the @Types for TypeScript
+
+> Create the file index.d.ts
+
+_"./src/@types/remote/index.d.ts"_
+
+```typescript
+import React from "react";
+const Counter: React.FunctionComponent<{
+  name: string;
+}>;
+
+export default Counter;
+```
+
+### _npm tsc --init_ to create the _tsconfig.json_ file
+
+> Change the "jsx"property
+
+```typescript
+  ...
+   "jsx": "react",
+  ...
+   "paths": {                    /* Specify a set of entries that re-map imports to additional lookup locations. */
+      "*":["src/@types/*"]
+      },
+  ...
+```

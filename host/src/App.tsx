@@ -38,7 +38,7 @@ const App = () => (
     <div>Language: TypeScript</div>
     <div>CSS: Tailwind</div>
     <ErrorBoundary>
-      <Counter />
+      <Counter app={{ name: "Host" }} />
     </ErrorBoundary>
   </div>
 );
