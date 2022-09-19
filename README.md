@@ -110,7 +110,7 @@ export default Counter;
   ...
 ```
 
-## Creating _Shared Library_ with npm/uyarn _LINK_
+## Creating TypeScript types _Shared Library_ with npm/yarn _LINK_
 
 ```javascript
   npx create-mf-app
@@ -147,7 +147,7 @@ and build
 ## LINKING with _yarn link_
 
 > This going to Allow us to link both _REMOTE_ and _HOST_
-> Sharing the contracts between them
+> Sharing the contracts Types (TypeScript) between them
 
 ```javascript
   yarn link
@@ -161,7 +161,7 @@ and build
 
 ```
 
-## Linkinking _REMOTE_ & _HOST_
+## Sharing Types Linking _REMOTE_ & _HOST_
 
 > REMOTE
 
@@ -179,7 +179,7 @@ and build
 > HOST
 
 ```javascript
-  cd ./hots
+  cd ./host
 
   yarn link mfe-shared
 
