@@ -7,7 +7,7 @@ export default function Counter() {
   return (
     <div className="border-2 border-blue-500 p-5 rounded-xl">
       <div>{counter}</div>
-      <div onClick={() => setCounter(counter + 1)}>Add to Count</div>
+      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded' onClick={() => setCounter(counter + 1)}>Add to Count</button>
     </div >
   )
 }

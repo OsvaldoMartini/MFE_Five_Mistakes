@@ -6,7 +6,7 @@
   npx create-mf-app
       ? Pick the name of your app: host
       ? Project Type: Application
-      ? Port number: 3001
+      ? Port number: 3000
       ? Framework: react
       ? Language: typescript
       ? CSS: Tailwind
