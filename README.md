@@ -37,7 +37,7 @@ And
       ? CSS: Tailwind
 ```
 
-## Deployin as an Assets on S3 if is the case
+## Deploying as an Assets on S3 if is the case
 
 ```
  yarn buid:dev   *As nice files names*
