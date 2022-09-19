@@ -5,6 +5,9 @@ import "./index.scss";
 
 import Counter from "remote/Counter";
 
+import MyUserMFE from "remote/MyUserMFE";
+
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -40,6 +43,8 @@ const App = () => (
     <ErrorBoundary>
       <Counter app={{ name: "Host" }} />
     </ErrorBoundary>
+    <div>Contracts Types Shared Library with Using Yarn LINK</div>
+    <MyUserMFE user={"Osvado Martini on HOST"} />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));

@@ -46,6 +46,7 @@ module.exports = {
       remotes: {},
       exposes: {
         "./Counter": "./src/Counter.tsx",
+        "./MyUserMFE": "./src/MyUserMFE.tsx",
       },
       shared: {
         ...deps,

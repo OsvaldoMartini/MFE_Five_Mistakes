@@ -146,7 +146,8 @@ and build
 
 ## LINKING with _yarn link_
 
-> This going to Allow us to likn both _REMOTE_ and _HOST_
+> This going to Allow us to link both _REMOTE_ and _HOST_
+> Sharing the contracts between them
 
 ```javascript
   yarn link
