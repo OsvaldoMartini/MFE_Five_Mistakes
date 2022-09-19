@@ -46,7 +46,7 @@ And
  yarn build      *As chunck files names*
 ```
 
-## BASH cmd - Running idenpendly as Dummy serve app with _SERVOR_
+## BASH cmd - Running independently as Dummy serve app with _SERVOR_
 
 ### For deploying as Assest Store like _S3_
 
