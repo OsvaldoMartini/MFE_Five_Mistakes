@@ -67,3 +67,14 @@ And
     "start": "servor www index.html 3001 --reload --browse"
   }
 ```
+
+## Dev tools disabled
+
+```javascript
+  ./webpakc.config.js
+    ...
+    devtool: false,
+    ...
+
+  yarn build:dev
+```
