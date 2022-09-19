@@ -109,3 +109,81 @@ export default Counter;
       },
   ...
 ```
+
+## Creating _Shared Library_ with npm/uyarn _LINK_
+
+```javascript
+  npx create-mf-app
+      ? Pick the name of your app: mfe-shared
+      ? Project Type: Library
+```
+
+### Add React and React-Dom
+
+```javascript
+  yarn add react react-dom -D
+
+  yarn add @types/react @types/react-dom -D
+```
+
+### On _index.ts_ add the declaration types for _Counter_
+
+> "index.ts" with the definitions of the _Counter_ is
+
+```javascript
+import React from "react";
+
+export type Counter = React.FunctionComponent<{ name: string }>;
+
+export default true;
+```
+
+and build
+
+```javascript
+  yarn build
+```
+
+## LINKING with _yarn link_
+
+> This going to Allow us to likn both _REMOTE_ and _HOST_
+
+```javascript
+  yarn link
+
+  ## results
+    yarn link v1.22.19
+    success Registered "mfe-shared".
+    info You can now run `yarn link "mfe-shared"` in the projects
+    where you want to use this package and it will be used instead.
+    Done in 0.04s.
+
+```
+
+## Linkinking _REMOTE_ & _HOST_
+
+> REMOTE
+
+```javascript
+  cd ./remote
+
+  yarn link mfe-shared
+
+  ## resuts
+    yarn link v1.22.19
+    success Using linked package for "mfe-shared".
+    Done in 0.04s.
+```
+
+> HOST
+
+```javascript
+  cd ./hots
+
+  yarn link mfe-shared
+
+  ## resuts
+    yarn link v1.22.19
+    success Using linked package for "mfe-shared".
+    Done in 0.04s.
+```
