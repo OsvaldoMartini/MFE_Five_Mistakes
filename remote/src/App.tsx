@@ -10,7 +10,7 @@ const App = () => (
     <div>Framework: React</div>
     <div>Language: TypeScript</div>
     <div>CSS: Tailwind</div>
-    <Counter />
+    <Counter app={{ name: "Remote 1" }} />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
